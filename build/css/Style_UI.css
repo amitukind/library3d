@@ -1,0 +1,146 @@
+/* **** Top menu **** */
+#header{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #0a192f;
+    box-shadow: 0px 0px 3px black;
+    
+    /* z-index: 20; */
+    display: none;
+}
+
+/* Left icons */
+#header .menutools{
+    position: absolute;
+    left: 20px;
+}
+
+#header .menutools .menu{
+    display: flex;
+}
+
+#header .menutools .menu li{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid #64ffda;
+    /* margin-left: 10px; */
+    cursor: pointer;
+    background-position: 50%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-color: #213044;
+    position: relative;
+}
+
+#header .menutools .menu li.leftmenu{
+    background-image: url("../css/img/md-menu.png");
+}
+
+/* Title and subtitle */
+#header .entry-title{
+    position: relative;
+    margin-left: 90px;
+}
+
+#header .verticalCenter{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#header .entry-title h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #64ffda;
+    margin: 0 0 5px 0;
+}
+
+#header .entry-title h2{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #64ffda;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Right icons */
+#header .tools{
+    position: absolute;
+    right: 20px;
+}
+
+#header .tools .menu{
+    display: flex;
+}
+
+#header .tools .menu li{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid #64ffda;
+    margin-left: 10px;
+    cursor: pointer;
+    background-position: 50%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-color: #213044;
+    position: relative;
+}
+
+#header .tools .menu li.fullscreen{
+    background-image: url("../css/img/fullscreen.png");
+}
+
+/* **** Left menu **** */
+#leftMenu span {
+    font-family: Arial;
+    /* font-family: tahoma, arial, sans-serif; */
+    color: #64ffda;
+    font-size: 14px;
+}
+
+#leftMenu{
+    position:absolute;
+    top: 90px;
+    left: 4px;
+    color: #64ffda;
+    font-family:courier new, consolas;
+    font-weight:100;
+    text-align:center;
+    z-index:1000;
+    padding: 0pt 1pt;
+    display: none;
+    flex-direction: column;
+}
+#leftMenu button{
+    font-family: Arial;
+    background-color: #213044;
+    text-transform: uppercase;
+    margin: 2px 4px;
+    padding: 2px;
+    text-decoration: none;
+    color: #ccd6f6;
+    font-size: 12px;
+    border: none;
+}
+#leftMenu button:hover{
+    background-color:#515151;
+    color:#64ffda;
+}
+#leftMenu button:active{
+    background-color:lightgrey;
+    color:#515151;
+}
+
+/* Menu items selection  */
+.selected {
+    background-color:#515151;
+    color:#64ffda;
+    
+}
+
+/* #leftMenu button.line1{
+    background-color: #750000;
+} */
