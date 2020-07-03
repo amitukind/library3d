@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Library 3D - Demo</title>
+    <meta name="description" content="Created by Amit Verma" />
+
+    <link rel="stylesheet" type="text/css" href="css/mainStyle_LoadingScreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/Style_UI.css" />
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+
+    <script src="js/libs/babylon.js"></script>
+    <script src="js/libs/babylon.glTF2FileLoader.min.js"></script>
+    <script src="js/libs/pep.min.js"></script>
+    <script src="js/libs/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen"></div>
+
+    <!-- **** Top menu **** -->
+    <div id="header">
+        <div class="menutools verticalCenter">
+            <ul class="menu">
+                <li id="leftmenu_button" class="leftmenu tooltipped" data-position="bottom"
+                    data-tooltip="Display left menu" ng-click="DisplayMenu()" ng-cloak></li>
+            </ul>
+        </div>
+        <div class="entry-title verticalCenter">
+            <h1>3D Interactive Library</h1>
+            <h2>WebGL</h2>
+        </div>
+        <div class="tools verticalCenter">
+            <ul class="menu">
+                <li id="fullscreen_button" class="fullscreen tooltipped" data-position="bottom"
+                    data-tooltip="Plein écran" ng-click="fullscreen()" ng-cloak></li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <!-- **** Left menu **** -->
+    <div id="leftMenu">
+        <span class="titleLeftMenu">MENU</span>
+        <button class="line1" onclick="leftMenuInfoDesk()">INFORMATION DESK</button>
+        <button class="line2" onclick="leftMenuStudyArea()">STUDY AREA</button>
+        <button class="line3" onclick="leftMenuGroupeStudyRoom()">GROUP STUDY ROOMS</button>
+        <br>
+        <!-- <span class="titleLeftMenu">Rayonnages</span> -->
+        <button class="line4" onclick="leftMenuBooks()">BOOKS</button>
+        <button class="line5" onclick="leftMenuNewspapers()">NEWSPAPERS</button>
+        <button class="line6" onclick="leftMenuNewBooksDisplay()">NEW BOOKS DISPLAY</button>
+        <button class="line7" onclick="leftMenuPeriodicals()">CURRENT PERIODICALS</button>
+        <button class="line8" onclick="leftMenuBookDrop()">BOOK RETURN BOX</button>
+        <button class="line9" onclick="leftMenuTrocLivre()">TROC LIVRE</button>
+        <button class="line10" onclick="leftMenuBloomberg()">BLOOMBERG TERMINALS</button>
+        <button class="line11" onclick="leftMenuPrinter()">PRINTER</button>
+        <br>
+        <button class="line12" onclick="leftMenuDeltakosh()">Man with T-shirt</button>
+
+    </div>
+
+
+    <!-- Script UI HTML - CSS -->
+    <script src="js/UI.js"></script>
+
+    <!-- **** Babylon.JS **** -->
+    <!-- <canvas id="renderCanvas"></canvas> -->
+    <!-- touch-action="none" for best results from PEP -->
+    <canvas id="renderCanvas" touch-action="none"></canvas>
+
+    <!-- Get the canvas element and Generate the BABYLON 3D engine -->
+    <script type="text/javascript">
+        var canvas = document.getElementById("renderCanvas");
+        var engine = new BABYLON.Engine(canvas, true);
+    </script>
+
+    <!-- ******** Scripts  ******** -->
+    <!-- Loading screen function - need progres bar function in Append Object  -->
+    <script src="js/Loading_Screen.js"></script>
+
+    <!-- Create and execute scene -->
+    <script src="js/Scene.js"></script>
+
+    <!-- Lights -->
+    <script src="js/Lights.js"></script>
+
+    <!-- Type of Camera -->
+    <script src="js/Player_ArcRotateCamera.js"></script>
+
+    <!-- Add Objects -->
+    <script src="js/Arena_Append_glTF_Main.js"></script>
+
+</body>
+
+</html>

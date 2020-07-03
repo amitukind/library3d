@@ -1,6 +1,5 @@
 // Add autocompletion - Download file babylon.d.ts to https://github.com/BabylonJS/Babylon.js/tree/master/dist
-/// <reference path="libs/babylon.d.ts" />
-
+// / <reference path="libs/babylon.d.ts" />
 
 // *** http://babylonjsguide.github.io/basics/Lights *** //
 
@@ -26,7 +25,11 @@
 // light.range = 100;
 
 //HemiLight - Light direction is up and left
-var light = new BABYLON.HemisphericLight("HemiLight", new BABYLON.Vector3(0, 1, 0), scene);
+var light = new BABYLON.HemisphericLight(
+  "HemiLight",
+  new BABYLON.Vector3(0, 1, 0),
+  scene
+);
 light.intensity = 0.7;
 light.diffuse = new BABYLON.Color3(0.95, 0.95, 0.95);
 // light.specular = new BABYLON.Color3(0.95, 0.95, 0.95);

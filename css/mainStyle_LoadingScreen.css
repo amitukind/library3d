@@ -5,7 +5,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: tahoma, arial, sans-serif;
-    color: white;
+    color: #64ffda;
 }
 
 /* List without puce */
@@ -38,14 +38,15 @@ ul {
     margin-top: 40vh;
     background-color: rgba(15, 17, 30, 0.75);
     border: 1pt solid black;
-    color: rgb(255, 247, 221);
+    color:#64ffda;
+    font-weight: 100;
+    font-size: 0.7em;
     /* box-shadow: 0px 0px 28px 4px rgba(255, 247, 221, 0.75); */
 }
 
 #loadPercent {
     font-weight: 100;
     font-size: 0.6em;
-    letter-spacing: 6pt;
 }
 
 #madeby {
