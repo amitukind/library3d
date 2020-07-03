@@ -20,7 +20,7 @@ var createScene = function () {
 
   /** Define a general environment texture **/
   hdrTexture = BABYLON.CubeTexture.CreateFromPrefilteredData(
-    "hdr/environment.dds",
+    "assets/hdr/environment.dds",
     scene
   );
   scene.environmentTexture = hdrTexture;
