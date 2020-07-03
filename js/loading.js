@@ -13,7 +13,7 @@ MyLoadingScreen.prototype.displayLoadingUI = function () {
       "<div class='content'>" +
       "<h1>3D Interactive Library<h1>" +
       "<h2>WebGL Demo<h2>" +
-      '<img src="/assets/images/loading_bar.gif" />' +
+      '<img src="assets/images/loading_bar.gif" />' +
       "<br>" +
       "<span id='loadPercent'> " + 'Loading . . . '+
       loadedPercent +

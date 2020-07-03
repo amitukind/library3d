@@ -31,7 +31,7 @@ ul {
     background-color: #1c385b;
     background-position: center;
     background-size: cover;
-    background-image: url("/assets/images/loading_bg.jpg");
+    background-image: url("assets/images/loading_bg.jpg");
 }
 
 #loadingScreen .content {
@@ -95,7 +95,7 @@ ul {
 }
 
 #header .menutools .menu li.leftmenu{
-    background-image: url("/assets/images/md-menu.png");
+    background-image: url("assets/images/md-menu.png");
 }
 
 /* Title and subtitle */
@@ -150,7 +150,7 @@ ul {
 }
 
 #header .tools .menu li.fullscreen{
-    background-image: url("/assets/images/fullscreen.png");
+    background-image: url("assets/images/fullscreen.png");
 }
 
 /* **** Left menu **** */
