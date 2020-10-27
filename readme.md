@@ -1,4 +1,4 @@
-WebGL Based 3D Interactive Library - Demo created in Babylon.js
+WebGL Based 3D Interactive Library - Demo created in [Babylon.js](https://www.babylonjs.com/)
 
 [Live Demo](http://amitukind.com/projects/library3d/)
 
